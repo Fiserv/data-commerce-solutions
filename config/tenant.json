@@ -42,7 +42,14 @@
       }
     ]
   },
-  "supportConfig": [
+  "apiVersions": [
+    {
+      "version": "1.0.0",
+      "versionType": "minor",
+      "releaseNotesPath": "docs/Release-Notes-Alerts/Release-Notes.md",
+      "apiSpecFileNames": ["openapi"]
+    },
+    "supportConfig": [
     {
       "bug": {
         "label": "bug,SupportPages",
