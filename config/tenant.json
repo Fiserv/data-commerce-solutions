@@ -2,36 +2,36 @@
   "title": "Data Commerce Solutions",
   "name": "DataCommerceSolutions",
   "brand": "Fiserv",
-  "brandLogoURL": "https://raw.githubusercontent.com/Fiserv/Banking-Product-Cards/develop/assets/images/4_Cards-min%20copy.jpg",
-  "solution": [
-    "fintech"
-  ],
-  "brandDescription": "Fiserv, Inc. is a global provider of payments and financial services technology solutions. The Company provides account processing and digital banking solutions, card issuer processing and network services, payments, e-commerce, merchant acquiring and processing, and the Clover cloud-based point-of-sale solution. The Company operates through three segments: Merchant Acceptance (Acceptance), Financial Technology (Fintech) and Payments and Network (Payments).",
-  "categories": [
-    {
-      "name": "businessTypes",
-      "value": "Business Types",
-      "subcategories": [
-        {
-          "name": "valueAddedServices",
-          "value": "Value Added Services"
-        }
-      ]
-    }
+  "brandLogoURL": "https://raw.githubusercontent.com/Fiserv/Developer-Portal-Tenant-API/develop/assets/images/Fiserv_Logo.jpg",
+  "solution": ["fintech"],
+  "brandDescription": "REPLACE ME > Fiserv, Inc. is a global provider of payments and financial services technology solutions. The Company provides account processing and digital banking solutions, card issuer processing and network services, payments, e-commerce, merchant acquiring and processing, and the Clover cloud-based point-of-sale solution. The Company operates through three segments: Merchant Acceptance (Acceptance), Financial Technology (Fintech) and Payments and Network (Payments).",
+  "apiVersions": [
+      {
+        "version": "1.0.0",
+        "versionType": "major",
+        "releaseNotesPath": "docs/release-notes/2022/march.md",
+        "apiSpecFileNames": ["openapi"]
+      }
   ],
   "product": {
     "featured": true,
-    "logoURL": "",
-    "description": "Developer Studio Support pages",
-    "longDescription": "Developer Studio Support pages",
+    "logoURL": "https://raw.githubusercontent.com/Fiserv/Developer-Portal-Tenant-API/develop/assets/images/Portal_Logo.png",
+    "description": "To onboard properly into the Developer Studio as a tenant each product must support these APIs so that we can retrieve product specific API specifications and documentation.",
+    "longDescription":"To onboard properly into the Developer Studi as a tenant each product must support these APIs so that we can retrieve product specific API specifications and documentation.",
+    "apiSpecification": "/v1/apis/DataCommerceSolutions",
     "layout": "/v1/layouts/DataCommerceSolutions",
     "documentation": "/v1/docs/DataCommerceSolutions",
     "documenttree": "/v1/docs/DataCommerceSolutions",
     "documenttreeV2": "/v2/docs/DataCommerceSolutions",
-    "sandbox": "/v2/sandboxrun/DataCommerceSolutions",
+    "docsCount": "/v2/docs/count/DataCommerceSolutions",
+    "sandbox": "/v1/sandboxrun/DataCommerceSolutions",
     "accessConfig": "/v1/fileAccess/DataCommerceSolutions",
-    "assets": "/v1/assets/DataCommerceSolutions",
-    "feature": [
+    "assets": "/v1/assets/DataCommerceSolutions",    
+    "feature":[
+      {
+        "name": "sandBox",
+        "value": false
+      },
       {
         "name": "plugins",
         "value": false
@@ -39,33 +39,28 @@
       {
         "name": "industryOptionsAPIExplorer",
         "value": false
+      },
+      {
+        "name": "editParameterAPIExplorer",
+        "value": false
       }
     ]
   },
-  "apiVersions": [
-    {
-      "version": "1.0.0",
-      "versionType": "minor",
-      "releaseNotesPath": "docs/Release-Notes-Alerts/Release-Notes.md",
-      "apiSpecFileNames": ["openapi"]
+  "supportConfig": [{ 
+    "bug": {
+      "label": "bug,DataCommerceSolutions",
+      "template": "bug.md",
+      "assignees": "f6re97v,namanifiserv"
+    },  
+    "feedback": {
+      "label": "feedback,DataCommerceSolutions",
+      "template": "feedback.md",
+      "assignees": "f6re97v,namanifiserv"
     },
-    "supportConfig": [
-    {
-      "bug": {
-        "label": "bug,SupportPages",
-        "template": "bug.md",
-        "assignees": "f6re97v,namanifiserv"
-      },
-      "feedback": {
-        "label": "feedback,SupportPages",
-        "template": "feedback.md",
-        "assignees": "f6re97v,namanifiserv"
-      },
-      "enhancement": {
-        "label": "enhancement,SupportPages",
-        "template": "feature.md",
-        "assignees": "f6re97v,namanifiserv"
-      }
+    "enhancement": {
+      "label": "enhancement,DataCommerceSolutions",
+      "template": "feature.md",
+      "assignees": "f6re97v,namanifiserv"
     }
-  ]
+  }]
 }
