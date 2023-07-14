@@ -1,6 +1,6 @@
 {
-  "title": "data-commerce-solutions",
-  "name": "data-commerce-solutions",
+  "title": "Data Commerce Solutions",
+  "name": "DataCommerceSolutions",
   "brand": "Fiserv",
   "brandLogoURL": "https://raw.githubusercontent.com/Fiserv/Banking-Product-Cards/develop/assets/images/4_Cards-min%20copy.jpg",
   "solution": [
@@ -24,13 +24,13 @@
     "logoURL": "",
     "description": "Developer Studio Support pages",
     "longDescription": "Developer Studio Support pages",
-    "layout": "/v1/layouts/data-commerce-solutions",
-    "documentation": "/v1/docs/data-commerce-solutions",
-    "documenttree": "/v1/docs/data-commerce-solutions",
-    "documenttreeV2": "/v2/docs/data-commerce-solutions",
-    "sandbox": "/v2/sandboxrun/data-commerce-solutions",
-    "accessConfig": "/v1/fileAccess/data-commerce-solutions",
-    "assets": "/v1/assets/data-commerce-solutions",
+    "layout": "/v1/layouts/DataCommerceSolutions",
+    "documentation": "/v1/docs/DataCommerceSolutions",
+    "documenttree": "/v1/docs/DataCommerceSolutions",
+    "documenttreeV2": "/v2/docs/DataCommerceSolutions",
+    "sandbox": "/v2/sandboxrun/DataCommerceSolutions",
+    "accessConfig": "/v1/fileAccess/DataCommerceSolutions",
+    "assets": "/v1/assets/DataCommerceSolutions",
     "feature": [
       {
         "name": "plugins",
