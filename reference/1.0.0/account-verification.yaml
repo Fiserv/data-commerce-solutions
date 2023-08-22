@@ -296,6 +296,9 @@ paths:
           application/json:
             schema:
               $ref: '#/components/schemas/VerificationRequest'
+      x-group-name: Account Verification
+      x-proxy-name: Account Verification
+      x-child-product-name: Account Verification
 components:
   schemas:
     Authorization:
