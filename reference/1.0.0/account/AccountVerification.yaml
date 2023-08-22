@@ -48,37 +48,7 @@ paths:
                         description: The message supplied with the Response
                         type: string
                         example: search results matching criteria
-        '204':
-          description: no matching results
-          content:
-            application/json:
-              schema:
-                type: object
-                properties:
-                  tranasction:
-                    description: transactionid and timestamp
-                    type: object
-                    properties:
-                      transactionId:
-                        description: 'Response transactionId '
-                        type: string
-                        example: 550e8400-e29b-41d4-a716-446655440000
-                      timestamp:
-                        description: Response timestamp
-                        type: string
-                        example: '2023-07-12 11:01:10'
-                  response:
-                    description: Response information verified and message
-                    type: object
-                    properties:
-                      verified:
-                        description: Yes/No value if Response has been verified
-                        type: string
-                        example: 'No'
-                      message:
-                        description: The message supplied with the Response
-                        type: string
-                        example: no matching results
+
         '206':
           description: Partial results found
           content:
