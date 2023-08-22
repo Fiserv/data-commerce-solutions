@@ -1,0 +1,569 @@
+openapi: 3.0.0
+info:
+  version: 1.1.1
+  title: Account Verification API
+  description: >-
+    Account Verification api provides prospective clients confirmation that a
+    CONSUMER has the authority to transact using the provided account ID and
+    that data elements provided by the CONSUMER are accurate
+paths:
+  /v1/account/verification:
+    post:
+      summary: >-
+        Verify that a CONSUMER has the authority to transact using the provided
+        account and data elements provided by the CONSUMER are accurate
+      operationId: accountVerification
+      description: verifies account information
+      tags:
+        - Dev
+      responses:
+        '200':
+          description: search results matching criteria
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  tranasction:
+                    description: transactionid and timestamp
+                    type: object
+                    properties:
+                      transactionId:
+                        description: 'Response transactionId '
+                        type: string
+                        example: 550e8400-e29b-41d4-a716-446655440000
+                      timestamp:
+                        description: Response timestamp
+                        type: string
+                        example: '2023-07-12 11:01:10'
+                  response:
+                    description: Response information verified and message
+                    type: object
+                    properties:
+                      verified:
+                        description: Yes/No value if Response has been verified
+                        type: string
+                        example: 'Yes'
+                      message:
+                        description: The message supplied with the Response
+                        type: string
+                        example: search results matching criteria
+        '204':
+          description: no matching results
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  tranasction:
+                    description: transactionid and timestamp
+                    type: object
+                    properties:
+                      transactionId:
+                        description: 'Response transactionId '
+                        type: string
+                        example: 550e8400-e29b-41d4-a716-446655440000
+                      timestamp:
+                        description: Response timestamp
+                        type: string
+                        example: '2023-07-12 11:01:10'
+                  response:
+                    description: Response information verified and message
+                    type: object
+                    properties:
+                      verified:
+                        description: Yes/No value if Response has been verified
+                        type: string
+                        example: 'No'
+                      message:
+                        description: The message supplied with the Response
+                        type: string
+                        example: no matching results
+        '206':
+          description: Partial results found
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  tranasction:
+                    description: transactionid and timestamp
+                    type: object
+                    properties:
+                      transactionId:
+                        description: 'Response transactionId '
+                        type: string
+                        example: 550e8400-e29b-41d4-a716-446655440000
+                      timestamp:
+                        description: Response timestamp
+                        type: string
+                        example: '2023-07-12 11:01:10'
+                  response:
+                    description: Response information verified and message
+                    type: object
+                    properties:
+                      verified:
+                        description: Yes/No value if Response has been verified
+                        type: string
+                        example: 'No'
+                      message:
+                        description: The message supplied with the Response
+                        type: string
+                        example: partial results found
+        '207':
+          description: Multiple results found
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  tranasction:
+                    description: transactionid and timestamp
+                    type: object
+                    properties:
+                      transactionId:
+                        description: 'Response transactionId '
+                        type: string
+                        example: 550e8400-e29b-41d4-a716-446655440000
+                      timestamp:
+                        description: Response timestamp
+                        type: string
+                        example: '2023-07-12 11:01:10'
+                  response:
+                    description: Response information verified and message
+                    type: object
+                    properties:
+                      verified:
+                        description: Yes/No value if Response has been verified
+                        type: string
+                        example: 'No'
+                      message:
+                        description: The message supplied with the Response
+                        type: string
+                        example: multiple results found
+        '400':
+          description: 'invalid data field formatting '
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  tranasction:
+                    description: transactionid and timestamp
+                    type: object
+                    properties:
+                      transactionId:
+                        description: 'Response transactionId '
+                        type: string
+                        example: 550e8400-e29b-41d4-a716-446655440000
+                      timestamp:
+                        description: Response timestamp
+                        type: string
+                        example: '2023-07-12 11:01:10'
+                  errors:
+                    description: Array containing error code and the response message
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        code:
+                          description: 'the error code '
+                          type: string
+                          example: '400'
+                        message:
+                          description: The message supplied with the Response
+                          type: string
+                          example: invalid data field formatting
+        '401':
+          description: 'Unauthenticated response , missing or invalid token'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  tranasction:
+                    description: transactionid and timestamp
+                    type: object
+                    properties:
+                      transactionId:
+                        description: 'Response transactionId '
+                        type: string
+                        example: 550e8400-e29b-41d4-a716-446655440000
+                      timestamp:
+                        description: Response timestamp
+                        type: string
+                        example: '2023-07-12 11:01:10'
+                  errors:
+                    description: Array containing error code and the response message
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        code:
+                          description: 'the error code '
+                          type: string
+                          example: '401'
+                        message:
+                          description: The message supplied with the Response
+                          type: string
+                          example: 'Unauthenticated response, missing or invalid token'
+        '403':
+          description: 'Forbidden , account id not on system'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  tranasction:
+                    description: transactionid and timestamp
+                    type: object
+                    properties:
+                      transactionId:
+                        description: 'Response transactionId '
+                        type: string
+                        example: 550e8400-e29b-41d4-a716-446655440000
+                      timestamp:
+                        description: Response timestamp
+                        type: string
+                        example: '2023-07-12 11:01:10'
+                  errors:
+                    description: Array containing error code and the response message
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        code:
+                          description: 'the error code '
+                          type: string
+                          example: '403'
+                        message:
+                          description: The message supplied with the Response
+                          type: string
+                          example: 'Forbidden, account id not on system'
+        '412':
+          description: Data fields not supported
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  tranasction:
+                    description: transactionid and timestamp
+                    type: object
+                    properties:
+                      transactionId:
+                        description: 'Response transactionId '
+                        type: string
+                        example: 550e8400-e29b-41d4-a716-446655440000
+                      timestamp:
+                        description: Response timestamp
+                        type: string
+                        example: '2023-07-12 11:01:10'
+                  errors:
+                    description: Array containing error code and the response message
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        code:
+                          description: 'the error code '
+                          type: string
+                          example: '412'
+                        message:
+                          description: The message supplied with the Response
+                          type: string
+                          example: data fields not supported
+      parameters:
+        - in: header
+          name: Authorization
+          required: true
+          schema:
+            $ref: '#/components/schemas/Authorization'
+        - in: header
+          name: request-id
+          required: true
+          schema:
+            $ref: '#/components/schemas/request-id'
+        - in: header
+          name: subscriber-id
+          required: true
+          schema:
+            $ref: '#/components/schemas/subscriber-id'
+      requestBody:
+        description: Client account parameters used for account verification
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/VerificationRequest'
+      x-group-name: Account Verification
+      x-proxy-name: Account Verification
+      x-child-product-name: Account Verification
+components:
+  schemas:
+    Authorization:
+      description: 'Send access token to the text Bearer as follows: bearer {{access_token}}'
+      type: string
+      example: >-
+        Bearer
+        eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
+    request-id:
+      description: uniquely identifies the specific HTTP request.
+      type: string
+      example: requestID1
+    subscriber-id:
+      description: uniquely identifies the client information for the request.
+      type: string
+      example: Direct
+    VerificationRequest:
+      type: object
+      required:
+        - name
+        - address
+        - account
+        - phone
+        - dob
+        - dl
+      properties:
+        name:
+          $ref: '#/components/schemas/name'
+        address:
+          $ref: '#/components/schemas/address'
+        account:
+          $ref: '#/components/schemas/account'
+        phone:
+          $ref: '#/components/schemas/phone'
+        dob:
+          $ref: '#/components/schemas/dob'
+        dl:
+          $ref: '#/components/schemas/dl'
+        ssn:
+          $ref: '#/components/schemas/ssn'
+    name:
+      type: object
+      description: 'Define clients consumers name '
+      required:
+        - firstName
+        - lastName
+      properties:
+        firstName:
+          description: >-
+            User’s first name. May only contain letters, an apostrophe, hyphen,
+            period, single space. Length: 1-30
+          type: string
+          example: John
+        lastName:
+          description: >-
+            User’s last name. May only contain letters, an apostrophe, hyphen,
+            period, single space. Length: 1-30
+          type: string
+          example: Smith
+        middleName:
+          description: >-
+            User’s middle name. May only contain the following characters: 0-9,
+            spaces, a-z, A-Z, period, comma, apostrophe, underscore, slash, and
+            hyphen. Length: 0-30
+          type: string
+          example: Williamson
+        nameSuffix:
+          description: >-
+            Username suffix. Valid Values: Jr, Sr, I, II, III, IV, V, VI, VII,
+            VIII or IX
+          type: string
+          enum:
+            - Jr
+            - Sr
+            - I
+            - II
+            - III
+            - IV
+            - V
+            - VI
+            - VII
+            - VIII
+            - IX
+          example: Sr
+        namePrefix:
+          description: 'Username prefix. Valid values: Mr, Ms, Mrs, Miss, Master, Dr'
+          type: string
+          enum:
+            - Mr
+            - Ms
+            - Mrs
+            - Miss
+            - Master
+          example: Mr
+    address:
+      type: object
+      description: 'Define clients consumers address '
+      required:
+        - addressLine1
+        - city
+        - zipCode
+        - addressCode
+      properties:
+        addressLine1:
+          description: >-
+            User’s address street 1. Should not be more than 30 characters.
+            Length: 1-30
+          type: string
+          example: 1900 NE Miami Pl
+        addressLine2:
+          description: >-
+            User’s address street 2. Should not be more than 30 characters and
+            can be blank. Length: 0-30
+          type: string
+          example: Barkingson Way
+        city:
+          description: >-
+            User’s city. Cannot be empty. Mandatory if addressLine 1 is
+            available. Length: 1-25
+          type: string
+          example: Miami
+        state:
+          description: >-
+            User’s state. Valid US state or territory in format “NY” for New
+            York. Case Sensitive. Length: 2
+          type: string
+          example: FL
+        country:
+          description: User’s country.
+          type: string
+          example: United States of America
+        zipCode:
+          description: >-
+            User’s ZIP code. Cannot be empty. Mandatory if addressLine 1 is
+            available. Numeric Length: 5 
+          type: string
+          example: '30139'
+        addressCode:
+          description: 'Type of address. Valid values: Home, Billing, Service, Work '
+          type: string
+          enum:
+            - Home
+            - Billing
+            - Service
+            - Work
+          example: Home
+    account:
+      type: object
+      description: 'Define clients consumers brokerage '
+      required:
+        - accountType
+        - routingNumber
+      properties:
+        accountGroup:
+          description: Account Group should be either Cash or Investment
+          type: string
+          enum:
+            - Cash
+            - Investment
+          example: Investment
+        accountType:
+          description: >-
+            Account type based on accountGroup. If Cash: Checking, Savings, MMA
+            Checking, MMA Savings.If Investment: Brokerage
+          type: string
+          enum:
+            - Checking
+            - Savings
+            - MMAChecking
+            - MMASavings
+            - Brokerage
+          example: Brokerage
+        brokerageAccountNumber:
+          description: 'Brokerage Account Number. Max length: 255'
+          type: string
+          example: IE12334567
+        brokerageIdentifier:
+          description: Unique ID for brokerage firm
+          type: string
+          example: IE1233456700000
+        checkingNumber:
+          description: >-
+            Checking account number if account group is Investment. Min length
+            16
+          type: string
+          example: 0112345678
+        creditAccountNumber:
+          description: 'Credit card account number. Max length: 255'
+          type: string
+          example: '378282246310005'
+        debitAccountNumber:
+          description: >-
+            Account number, if the account has different debit and credit
+            account numbers, then the client can send the debit account number
+            in this field
+          type: string
+          example: '378282246310005'
+        routingNumber:
+          description: Routing transit number or ABA Number. Must contain 9 digits
+          type: string
+          example: 026009593
+    phone:
+      type: object
+      description: Define clients consumers phone
+      required:
+        - phoneNumber
+        - phoneType
+      properties:
+        phoneNumber:
+          description: >-
+            User’s phone number. It can be home, cell, or work phone. This is
+            used for primary phone. Should be 10 digits
+          type: string
+          example: '1212456789'
+        phoneType:
+          description: >-
+            Type of phone number provided. Valid values: Business, Home, Mobile,
+            Personal, Landline, Work
+          type: string
+          enum:
+            - Business
+            - Home
+            - Mobile
+            - Personal
+            - Landline
+            - Work
+          example: Home
+    dob:
+      type: object
+      description: 'Define clients consumers date of birth '
+      required:
+        - dateOfBirth
+      properties:
+        dateOfBirth:
+          description: User’s date of birth in “MM-DD-YYYY” format.
+          type: string
+          example: 09-17-1985
+    dl:
+      type: object
+      description: 'Define clients consumers id type '
+      required:
+        - idNumber
+      properties:
+        state:
+          description: >-
+            User’s state. Valid US state or territory in format “NY” for New
+            York. Case Sensitive. Length: 2
+          type: string
+          example: FL
+        idNumber:
+          description: 'Actual value of idType chosen. Maximum Length: 25'
+          type: string
+          example: S-514-778-616-977
+    ssn:
+      description: >-
+        User’s Social Security number. Should be numeric. Should not be
+        consecutive numbers (111111111, etc.). Should not be sequential number
+        (123456789, etc.). Length: 9
+      type: string
+      example: '555501234'
+servers:
+  - url: >-
+      https://az-n-spring-verification-app-az-n-spring-veriapp-staging.private.azuremicroservices.io
+    description: Demo Endpoint
+  - url: 'https://virtserver.swaggerhub.com/JOEMOLONEY/AVAPI/1.1.1'
+    description: SwaggerHub API Auto Mocking
+  - url: 'https://localhost'
+    description: SwaggerHub API Auto Mocking
