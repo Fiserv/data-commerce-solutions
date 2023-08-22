@@ -5,12 +5,31 @@
   "brandLogoURL": "https://raw.githubusercontent.com/Fiserv/Developer-Portal-Tenant-API/develop/assets/images/Fiserv_Logo.jpg",
   "solution": ["financial-institutions","fintech"],
   "brandDescription": "REPLACE ME > Fiserv, Inc. is a global provider of payments and financial services technology solutions. The Company provides account processing and digital banking solutions, card issuer processing and network services, payments, e-commerce, merchant acquiring and processing, and the Clover cloud-based point-of-sale solution. The Company operates through three segments: Merchant Acceptance (Acceptance), Financial Technology (Fintech) and Payments and Network (Payments).",
+  "categories": [
+		{
+			"name": "businessFunction",
+			"value": "Business Function",
+			"subcategories": [
+				{
+					"name": "Account",
+					"value": "Account",
+					"description": "APIs that make it possible to verify account information"
+				},
+				{
+					"name": "Merchant",
+					"value": "Merchant",
+					"description": "APIs that make it possible to verify merchant information"
+				}
+			]
+		}
+	],
+	"getStartedFilePath": "/docs/getting-started.md",
   "apiVersions": [
       {
         "version": "1.0.0",
         "versionType": "major",
         "releaseNotesPath": "docs/release-notes/2022/march.md",
-        "apiSpecFileNames": ["openapi"]
+        "apiSpecFileNames": ["openapi" , "AccountVerification"]
       }
   ],
   "product": {
