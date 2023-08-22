@@ -29,7 +29,7 @@
         "version": "1.0.0",
         "versionType": "major",
         "releaseNotesPath": "docs/release-notes/2022/march.md",
-        "apiSpecFileNames": ["account/AccountVerification"]
+        "apiSpecFileNames": ["account/AccountVerification","merchant/MerchantVerification"]
       }
   ],
   "product": {

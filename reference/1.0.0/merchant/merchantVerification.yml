@@ -1,0 +1,409 @@
+openapi: 3.0.0
+info:
+  version: 1.1.1
+  title: merchant Verification API
+  description: >-
+    merchant Verification api provides merchants confirmation that they have the authority to transact provided that data elements provided by the merchant are accurate
+paths:
+  /v1/merchant/verification:
+    post:
+      summary: Verify that a CONSUMER has the authority to transact using the provided account and data elements provided by the CONSUMER are accurate
+      operationId: merchantVerification
+      description: verifies account information
+      responses:
+        '200':
+          description: 'search results matching criteria'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  tranasction:
+                    description: 'transactionid and timestamp'
+                    type: object
+                    properties:
+                      transactionId:
+                        description: 'Response transactionId '
+                        type: string
+                        example: '550e8400-e29b-41d4-a716-446655440000'
+                      timestamp:
+                        description: 'Response timestamp'
+                        type: string
+                        example: '2023-07-12 11:01:10'
+                  response:
+                    description: 'Response information verified and message'
+                    type: object
+                    properties:
+                      verified:
+                        description: 'Yes/No value if Response has been verified'
+                        type: string
+                        example: 'Yes'
+                      message:
+                        description: 'The message supplied with the Response'
+                        type: string
+                        example: 'search results matching criteria'
+        '204':
+          description: 'no matching results'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  tranasction:
+                    description: 'transactionid and timestamp'
+                    type: object
+                    properties:
+                      transactionId:
+                        description: 'Response transactionId '
+                        type: string
+                        example: '550e8400-e29b-41d4-a716-446655440000'
+                      timestamp:
+                        description: 'Response timestamp'
+                        type: string
+                        example: '2023-07-12 11:01:10'
+                  response:
+                    description: 'Response information verified and message'
+                    type: object
+                    properties:
+                      verified:
+                        description: 'Yes/No value if Response has been verified'
+                        type: string
+                        example: 'No'
+                      message:
+                        description: 'The message supplied with the Response'
+                        type: string
+                        example: 'no matching results'
+        '206':
+          description: 'Partial results found'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  tranasction:
+                    description: 'transactionid and timestamp'
+                    type: object
+                    properties:
+                      transactionId:
+                        description: 'Response transactionId '
+                        type: string
+                        example: '550e8400-e29b-41d4-a716-446655440000'
+                      timestamp:
+                        description: 'Response timestamp'
+                        type: string
+                        example: '2023-07-12 11:01:10'
+                  response:
+                    description: 'Response information verified and message'
+                    type: object
+                    properties:
+                      verified:
+                        description: 'Yes/No value if Response has been verified'
+                        type: string
+                        example: 'No'
+                      message:
+                        description: 'The message supplied with the Response'
+                        type: string
+                        example: 'partial results found'
+        '207':
+          description: 'Multiple results found'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  timestamp:
+                    description: 'Response timestamp'
+                    type: string
+                    example: '2023-07-12 11:01:10'
+                  verified:
+                    description: 'Yes/No value if Response has been verified'
+                    type: string
+                    example: 'No'
+                  message:
+                    description: 'The message supplied with the Response'
+                    type: string
+                    example: 'multiple results found'
+        '412':
+          description: 'Data fields not supported'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  tranasction:
+                    description: 'transactionid and timestamp'
+                    type: object
+                    properties:
+                      transactionId:
+                        description: 'Response transactionId '
+                        type: string
+                        example: '550e8400-e29b-41d4-a716-446655440000'
+                      timestamp:
+                        description: 'Response timestamp'
+                        type: string
+                        example: '2023-07-12 11:01:10'
+                  errors:
+                    description: 'Array containing error code and the response message'
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        code:
+                          description: 'the error code '
+                          type: string
+                          example: '412'
+                        message:
+                          description: 'The message supplied with the Response'
+                          type: string
+                          example: 'data fields not supported'
+        '400':
+          description: 'invalid data field formatting '
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  tranasction:
+                    description: 'transactionid and timestamp'
+                    type: object
+                    properties:
+                      transactionId:
+                        description: 'Response transactionId '
+                        type: string
+                        example: '550e8400-e29b-41d4-a716-446655440000'
+                      timestamp:
+                        description: 'Response timestamp'
+                        type: string
+                        example: '2023-07-12 11:01:10'
+                  errors:
+                    description: 'Array containing error code and the response message'
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        code:
+                          description: 'the error code '
+                          type: string
+                          example: '400'
+                        message:
+                          description: 'The message supplied with the Response'
+                          type: string
+                          example: 'invalid data field formatting'
+        '401':
+          description: 'Unauthenticated response , missing or invalid token'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  tranasction:
+                    description: 'transactionid and timestamp'
+                    type: object
+                    properties:
+                      transactionId:
+                        description: 'Response transactionId '
+                        type: string
+                        example: '550e8400-e29b-41d4-a716-446655440000'
+                      timestamp:
+                        description: 'Response timestamp'
+                        type: string
+                        example: '2023-07-12 11:01:10'
+                  errors:
+                    description: 'Array containing error code and the response message'
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        code:
+                          description: 'the error code '
+                          type: string
+                          example: '401'
+                        message:
+                          description: 'The message supplied with the Response'
+                          type: string
+                          example: 'Unauthenticated response, missing or invalid token'
+        '403':
+          description: 'Forbidden , account id not on system'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  tranasction:
+                    description: 'transactionid and timestamp'
+                    type: object
+                    properties:
+                      transactionId:
+                        description: 'Response transactionId '
+                        type: string
+                        example: '550e8400-e29b-41d4-a716-446655440000'
+                      timestamp:
+                        description: 'Response timestamp'
+                        type: string
+                        example: '2023-07-12 11:01:10'
+                  errors:
+                    description: 'Array containing error code and the response message'
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        code:
+                          description: 'the error code '
+                          type: string
+                          example: '403'
+                        message:
+                          description: 'The message supplied with the Response'
+                          type: string
+                          example: 'Forbidden, account id not on system'
+      x-group-name: Merchant Verification
+      x-proxy-name: Merchant Verification
+      x-child-product-name: Merchant Verification
+      #Parameters/Headers#
+      parameters:
+        - in: header
+          name: Authorization
+          required: true
+          schema:
+            $ref: '#/components/schemas/Authorization'
+        - in: header
+          name: request-id
+          required: true
+          schema:
+            $ref: '#/components/schemas/request-id'
+        - in: header
+          name: subscriber-id
+          required: true
+          schema:
+            $ref: '#/components/schemas/subscriber-id'
+      
+      #Body#
+      requestBody:
+        description: merchant account parameters used for merchant verification
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/MerchantVerificationRequest'
+  
+components:
+  schemas:
+    #Header Definitions#
+    Authorization:
+      description: 'Send access token to the text Bearer as follows: bearer {{access_token}}'
+      type: string
+      example: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c'
+    request-id:
+      description: 'uniquely identifies the specific HTTP request.'
+      type: string
+      example: 'requestID1'
+    subscriber-id:
+      description: 'uniquely identifies the merchants information for the request.'
+      type: string
+      example: 'Direct'
+ 
+    #Parent Object Definition#
+    #MerchantVerificationRequest#
+    MerchantVerificationRequest:
+      type: object
+      required:
+        - businessName
+        - address
+      properties:
+        businessName:
+          $ref: '#/components/schemas/businessName'
+        address:
+          $ref: '#/components/schemas/address'
+        phone:
+          $ref: '#/components/schemas/phone'
+        dunsNumber:
+          $ref: '#/components/schemas/dunsNumber'
+ 
+  
+    #Child Object Definitions#
+    #BusinessName#
+    businessName:
+      type: string
+      description: 'Define the Business name '
+      example:  'Gorman Manufacturing'
+ 
+    #Address#
+    address:
+      type: object
+      description: 'Defines the merchants address '
+      required:
+        - addressLine1
+        - city
+        - zipCode
+        - addressCode
+        - country
+      properties:
+        addressLine1:
+          description: 'User’s address street 1. Should not be more than 30 characters. Length: 1-30'
+          type: string
+          example:  '492 KOLLER STREET'
+        addressLine2:
+          description: 'User’s address street 2. Should not be more than 30 characters and can be blank. Length: 0-30'
+          type: string
+          example: 'Barkingson Way'
+        city:
+          description: 'User’s city. Cannot be empty. Mandatory if addressLine 1 is available. Length: 1-25'
+          type: string
+          example: 'SAN FRANCISCO'
+        state:
+          description: 'User’s state. Valid US state or territory in format “NY” for New York. Case Sensitive. Length: 2'
+          type: string
+          example: 'CA'
+        country:
+          description: 'User’s country.'
+          type: string
+          example: 'US'
+        zipCode:
+          description: 'User’s ZIP code. Cannot be empty. Mandatory if addressLine 1 is available. Numeric Length: 5 '
+          type: string
+          example: '94486'
+        addressCode:
+          description: 'Type of address. Valid values: Home, Billing, Service, Work '
+          type: string
+          enum:
+            - Home
+            - Billing
+            - Service
+            - Work
+          example: 'Work'
+            
+    #Phone#
+    phone:
+      type: object
+      description: 'Define the merchants phone'
+      required:
+        - phoneNumber
+        - phoneType
+      properties:
+        phoneNumber:
+          description: 'User’s phone number. It can be home, cell, or work phone. This is used for primary phone. Should be 10 digits'
+          type: string
+          example: '1212456789'
+        phoneType:
+          description: 'Type of phone number provided. Valid values: Business, Home, Mobile, Personal, Landline, Work'
+          type: string
+          enum:
+            - Business
+            - Home
+            - Mobile
+            - Personal
+            - Landline
+            - Work
+          example: 'Home'
+  
+    #DunsNumber#
+    dunsNumber:
+      type: string
+      description: 'Define Merchants duns number this is an alternative way of identifying the merchant based on a unique identifier'
+      example: ''
+ 
+      
+servers:
+  - url: https://az-n-spring-verification-app-az-n-spring-veriapp-staging.private.azuremicroservices.io
+    description: Demo Endpoint
+  - url: https://virtserver.swaggerhub.com/JOEMOLONEY/AVAPI/1.1.1
+    description: SwaggerHub API Auto Mocking
