@@ -59,7 +59,7 @@ Use the API mentioned below to generate an access token using Postman.
 
 ### URL
 
-``POST https://cert.api.fiservapps.com/fts-apim/oauth2/v2 ``
+``POST https://az-n-spring-verification-app-az-n-spring-veriapp-staging.private.azuremicroservices.io/v1/auth ``
 
 
 ### Headers
