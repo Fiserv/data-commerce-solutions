@@ -364,57 +364,59 @@ components:
             - Master
           example: Mr
     address:
-      type: object
-      description: 'Define clients consumers address '
-      required:
-        - addressLine1
-        - city
-        - zipCode
-        - addressCode
-      properties:
-        addressLine1:
-          description: >-
-            User’s address street 1. Should not be more than 30 characters.
-            Length: 1-30
-          type: string
-          example: 1900 NE Miami Pl
-        addressLine2:
-          description: >-
-            User’s address street 2. Should not be more than 30 characters and
-            can be blank. Length: 0-30
-          type: string
-          example: Barkingson Way
-        city:
-          description: >-
-            User’s city. Cannot be empty. Mandatory if addressLine 1 is
-            available. Length: 1-25
-          type: string
-          example: Miami
-        state:
-          description: >-
-            User’s state. Valid US state or territory in format “NY” for New
-            York. Case Sensitive. Length: 2
-          type: string
-          example: FL
-        country:
-          description: User’s country.
-          type: string
-          example: United States of America
-        zipCode:
-          description: >-
-            User’s ZIP code. Cannot be empty. Mandatory if addressLine 1 is
-            available. Numeric Length: 5 
-          type: string
-          example: '30139'
-        addressCode:
-          description: 'Type of address. Valid values: Home, Billing, Service, Work '
-          type: string
-          enum:
-            - Home
-            - Billing
-            - Service
-            - Work
-          example: Home
+      type: array
+      items:
+        type: object
+        description: 'Define clients consumers address '
+        required:
+          - addressLine1
+          - city
+          - zipCode
+          - addressCode
+        properties:
+          addressLine1:
+            description: >-
+              User’s address street 1. Should not be more than 30 characters.
+              Length: 1-30
+            type: string
+            example: 1900 NE Miami Pl
+          addressLine2:
+            description: >-
+              User’s address street 2. Should not be more than 30 characters and
+              can be blank. Length: 0-30
+            type: string
+            example: Barkingson Way
+          city:
+            description: >-
+              User’s city. Cannot be empty. Mandatory if addressLine 1 is
+              available. Length: 1-25
+            type: string
+            example: Miami
+          state:
+            description: >-
+              User’s state. Valid US state or territory in format “NY” for New
+              York. Case Sensitive. Length: 2
+            type: string
+            example: FL
+          country:
+            description: User’s country.
+            type: string
+            example: United States of America
+          zipCode:
+            description: >-
+              User’s ZIP code. Cannot be empty. Mandatory if addressLine 1 is
+              available. Numeric Length: 5
+            type: string
+            example: '30139'
+          addressCode:
+            description: 'Type of address. Valid values: Home, Billing, Service, Work '
+            type: string
+            enum:
+              - Home
+              - Billing
+              - Service
+              - Work
+            example: Home
     account:
       type: object
       description: 'Define clients consumers brokerage '
@@ -511,6 +513,7 @@ components:
       description: 'Define clients consumers id type '
       required:
         - idNumber
+        - state
       properties:
         state:
           description: >-
@@ -533,7 +536,3 @@ servers:
   - url: >-
       https://az-n-spring-verification-app-az-n-spring-veriapp-staging.private.azuremicroservices.io
     description: Demo Endpoint
-  - url: 'https://virtserver.swaggerhub.com/JOEMOLONEY/AVAPI/1.1.1'
-    description: SwaggerHub API Auto Mocking
-  - url: 'https://localhost'
-    description: SwaggerHub API Auto Mocking

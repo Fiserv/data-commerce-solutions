@@ -5,6 +5,7 @@ info:
   description: Merchant Verification api provides merchants confirmation that they have the authority to transact provided that data elements provided by the merchant are accurate
   version: "1"
 servers:
+# Added by API Auto Mocking Plugin
 - url: https://az-n-spring-verification-app-az-n-spring-veriapp-merchant.private.azuremicroservices.io
   description: Demo Endpoint
 paths:
@@ -44,7 +45,7 @@ paths:
         required: true
       responses:
         "200":
-          description: success
+          description: matching results
           content:
             application/json:
               schema:
@@ -52,7 +53,7 @@ paths:
               examples:
                 search_results_matching_criteria:
                   summary: search results matching criteria
-                  description: This response is shown when the data provided successfully matches the merchant data in the database
+                  description:  "This response is shown when the data provided successfully matches the merchant data in the database "
                   value:
                     tranasction:
                       transactionId: "1234576"
@@ -62,7 +63,7 @@ paths:
                       message: search results matching criteria
                 no_matching_results:
                   summary: no matching results
-                  description: This response is shown when there is no result in the database matching the data provided
+                  description: "This response is shown when there is no result in the database matching the data provided "
                   value:
                     tranasction:
                       transactionId: 550e8400-e29b-41d4-a716
@@ -148,42 +149,44 @@ components:
       - city
       - country
       - zipCode
-      type: object
-      properties:
-        addressLine1:
-          type: string
-          description: "User’s address street 1. Should not be more than 30 characters. Length: 1-30"
-          example: 492 KOLLER STREET
-        addressLine2:
-          type: string
-          description: "User’s address street 2. Should not be more than 30 characters and can be blank. Length: 0-30"
-          example: Barkingson Way
-        city:
-          type: string
-          description: "User’s city. Cannot be empty. Mandatory if addressLine 1 is available. Length: 1-25"
-          example: SAN FRANCISCO
-        state:
-          type: string
-          description: "User’s state. Valid US state or territory in format “NY” for New York. Case Sensitive. Length: 2"
-          example: CA
-        country:
-          type: string
-          description: User’s country.
-          example: US
-        zipCode:
-          type: string
-          description: "User’s ZIP code. Cannot be empty. Mandatory if addressLine 1 is available. Numeric Length: 5 "
-          example: "94486"
-        addressCode:
-          type: string
-          description: "Type of address. Valid values: Home, Billing, Service, Work "
-          example: Work
-          enum:
-          - Home
-          - Billing
-          - Service
-          - Work
-      description: 'Defines the merchants address '
+      type: array
+      items:
+        type: object
+        properties:
+          addressLine1:
+            type: string
+            description: "User’s address street 1. Should not be more than 30 characters. Length: 1-30"
+            example: 492 KOLLER STREET
+          addressLine2:
+            type: string
+            description: "User’s address street 2. Should not be more than 30 characters and can be blank. Length: 0-30"
+            example: Barkingson Way
+          city:
+            type: string
+            description: "User’s city. Cannot be empty. Mandatory if addressLine 1 is available. Length: 1-25"
+            example: SAN FRANCISCO
+          state:
+            type: string
+            description: "User’s state. Valid US state or territory in format “NY” for New York. Case Sensitive. Length: 2"
+            example: CA
+          country:
+            type: string
+            description: User’s country.
+            example: US
+          zipCode:
+            type: string
+            description: "User’s ZIP code. Cannot be empty. Mandatory if addressLine 1 is available. Numeric Length: 5 "
+            example: "94486"
+          addressCode:
+            type: string
+            description: "Type of address. Valid values: Home, Billing, Service, Work "
+            example: Work
+            enum:
+            - Home
+            - Billing
+            - Service
+            - Work
+        description: 'Defines the merchants address '
     phone:
       required:
       - phoneNumber
@@ -209,12 +212,12 @@ components:
     dunsNumber:
       type: string
       description: Define Merchants duns number this is an alternative way of identifying the merchant based on a unique identifier
-      example: ""
+      example: "804735132"
     "200Response":
       type: object
       properties:
         tranasction:
-          $ref: '#/components/schemas/200Response_tranasction'
+          $ref: '#/components/schemas/Response_tranasction'
         response:
           $ref: '#/components/schemas/200Response_response'
       description: Search results matching criteria response
@@ -228,18 +231,11 @@ components:
     inline_response_207:
       type: object
       properties:
-        timestamp:
-          type: string
-          description: Response timestamp
-          example: 2023-07-12 11:01:10
-        verified:
-          type: string
-          description: Yes/No value if Response has been verified
-          example: "No"
-        message:
-          type: string
-          description: The message supplied with the Response
-          example: multiple results found
+        tranasction:
+          $ref: '#/components/schemas/inline_response_207_tranasction'
+        response:
+          $ref: '#/components/schemas/inline_response_207_response'
+
     inline_response_412:
       type: object
       properties:
@@ -280,7 +276,7 @@ components:
           description: Array containing error code and the response message
           items:
             $ref: '#/components/schemas/inline_response_403_errors'
-    "200Response_tranasction":
+    "Response_tranasction":
       type: object
       properties:
         transactionId:
@@ -300,6 +296,17 @@ components:
           type: string
           description: The message supplied with the Response
       description: Response information verified and message
+    inline_response_207_response:
+      type: object
+      properties:
+          verified:
+            type: string
+            description: Yes/No value if Response has been verified
+            example: "No"
+          message:
+            type: string
+            description: The message supplied with the Response
+            example: multiple results found
     inline_response_206_tranasction:
       type: object
       properties:
@@ -324,6 +331,18 @@ components:
           description: The message supplied with the Response
           example: partial results found
       description: Response information verified and message
+    inline_response_207_tranasction:
+      type: object
+      properties:
+        transactionId:
+          type: string
+          description: 'Response transactionId '
+          example: 550e8400-e29b-41d4-a716-446655440000
+        timestamp:
+          type: string
+          description: Response timestamp
+          example: 2023-07-12 11:01:10
+      description: transactionid and timestamp
     inline_response_412_errors:
       type: object
       properties:
