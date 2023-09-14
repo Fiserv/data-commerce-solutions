@@ -89,14 +89,14 @@ titles: Request, Response
       "merchantName": "Mywebsite.com",
       "customerServiceNumber": "1231231234",
       "serviceEntitlement": "67893827513",
-      "address":{
+      "address":[{
          "street": "123 Main Street",
          "houseNumberOrName": "Unit B",
          "city": "Atlanta",
          "stateOrProvince": "GA",
          "postalCode": "30303",
          "country": "US"
-      }
+      }]
    },
    "transactionDetails":{
       "captureFlag": true
@@ -172,14 +172,14 @@ type: tab
       "merchantName": "Mywebsite.com",
       "customerServiceNumber": "1231231234",
       "serviceEntitlement": "67893827513",
-      "address":{
+      "address":[{
          "street": "123 Main Street",
          "houseNumberOrName": "Unit B",
          "city": "Atlanta",
          "stateOrProvince": "GA",
          "postalCode": "30303",
          "country": "US"
-      }
+      }]
    }
 }
 ```
