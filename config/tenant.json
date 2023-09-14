@@ -30,7 +30,7 @@
         "versionType": "major",
         "releaseNotesPath": "docs/release-notes/2022/march.md",
         "apiSpecFileNames": ["account/AccountVerification",
-                             "merchant/merchantVerification"]
+                             "merchant/MerchantVerification"]
       }
   ],
   "product": {
@@ -50,7 +50,7 @@
     "feature":[
       {
         "name": "sandBox",
-        "value": false
+        "value": true
       },
       {
         "name": "plugins",
