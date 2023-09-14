@@ -22,7 +22,7 @@ paths:
         explode: false
         schema:
           $ref: '#/components/schemas/Authorization'
-      - name: request-id
+      - name: request-id 
         in: header
         required: true
         style: simple
