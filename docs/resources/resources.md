@@ -3,14 +3,12 @@
 ## API Specifications
 
 <!-- theme: info -->  
-> [Download API Specifications](https://raw.githubusercontent.com/Fiserv/data-commerce-solutions/develop/assets/APISpecsToDistribute/data-commerce-solutions_spec.zip
-)
+> [Download API Specifications](https://raw.githubusercontent.com/Fiserv/data-commerce-solutions/develop/assets/APISpecsToDistribute/data-commerce-solutions_spec.zip)
 
 ## Postman Collection
 
 <!-- theme: info -->  
-> [Download Postman Collection](https://raw.githubusercontent.com/Fiserv/data-commerce-solutions/develop/assets/DCS_Postman_Collections/data-commerce-solutions_postman.zip
-)
+> [Download Postman Collection](https://raw.githubusercontent.com/Fiserv/data-commerce-solutions/develop/assets/DCS_Postman_Collections/data-commerce-solutions_postman.zip)
 
 
 <!--
