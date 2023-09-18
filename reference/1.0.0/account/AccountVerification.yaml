@@ -456,22 +456,22 @@ components:
             Checking account number if account group is Investment. Min length
             16
           type: string
-          example: 0112345678
+          example: 1035232110352321
         creditAccountNumber:
           description: 'Credit card account number. Max length: 255'
           type: string
-          example: '378282246310005'
+          example: '3782822463100051'
         debitAccountNumber:
           description: >-
             Account number, if the account has different debit and credit
             account numbers, then the client can send the debit account number
             in this field
           type: string
-          example: '378282246310005'
+          example: '3782822463100051'
         routingNumber:
           description: Routing transit number or ABA Number. Must contain 9 digits
           type: string
-          example: 026009593
+          example: 260095931
     phone:
       type: object
       description: Define clients consumers phone
