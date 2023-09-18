@@ -77,7 +77,8 @@ From the Body tab, select the **x-www-form-urlencoded** radio button and enter t
 
 ``grant_type = client_credentials``
 
-![image](https://user-images.githubusercontent.com/81968767/220961197-8e76ec1f-b291-4dfd-8287-c4a83b4ecf40.png)
+![image](https://github.com/Fiserv/data-commerce-solutions/raw/develop/assets/images/auth_api_request.png
+)
 
 ### Response
 
