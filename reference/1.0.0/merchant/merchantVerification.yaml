@@ -15,22 +15,22 @@ paths:
       description: verifies account information
       operationId: merchantVerification
       parameters:
-      - in: header
-        name: Authorization
+      - name: Authorization
+        in: header
         required: true
         style: simple
         explode: false
         schema:
           $ref: '#/components/schemas/Authorization'
-      - in: header     
-        name: request-id 
+      - name: request-id 
+        in: header
         required: true
         style: simple
         explode: false
         schema:
           $ref: '#/components/schemas/request-id'
-      - in: header
-        name: subscriber-id
+      - name: subscriber-id
+        in: header
         required: true
         style: simple
         explode: false
