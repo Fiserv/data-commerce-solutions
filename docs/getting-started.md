@@ -68,7 +68,7 @@ Use the API mentioned below to generate an access token using Postman.
 |---------------------|----------------------------------------------------------|---------------|
 |     ``Authorization`` |    <p>Base64 encoded string representing your username and password values, appended to the text Basic as follows: </p> <p> <code> Basic <Base64 encoded username and password> </code></p> <p> **Important:** In Postman, use the **Authorization** tab to enter Username and Password values and set authentication type to **Basic Auth**. Use your **API key** as username and **API secret** as password. </p>                      |     Required    |
 
-![image](https://raw.githubusercontent.com/Fiserv/data-commerce-solutions/74862d8385c78da0d9f168f5f37ae683c6ce18eb/assets/images/auth_api_request.png)
+![image](https://raw.githubusercontent.com/Fiserv/data-commerce-solutions/538d3396f51a69c36026813983759118d324a5c4/assets/images/auth_api_request.png)
 
 
 ### Request Body
@@ -77,7 +77,7 @@ From the Body tab, select the **x-www-form-urlencoded** radio button and enter t
 
 ``grant_type = client_credentials``
 
-![image](https://raw.githubusercontent.com/Fiserv/data-commerce-solutions/74862d8385c78da0d9f168f5f37ae683c6ce18eb/assets/images/auth_api_request.png)
+![image](https://user-images.githubusercontent.com/81968767/220961197-8e76ec1f-b291-4dfd-8287-c4a83b4ecf40.png)
 
 ### Response
 
