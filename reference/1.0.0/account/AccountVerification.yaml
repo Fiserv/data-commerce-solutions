@@ -284,7 +284,7 @@ components:
     subscriber-id:
       description: uniquely identifies the client information for the request.
       type: string
-      example: Direct
+      example: 9338497
     VerificationRequest:
       type: object
       required:

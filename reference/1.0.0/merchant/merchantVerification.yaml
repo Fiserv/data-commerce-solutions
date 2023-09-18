@@ -123,7 +123,7 @@ components:
     subscriber-id:
       type: string
       description: uniquely identifies the merchants information for the request.
-      example: Direct
+      example: 9338497
     MerchantVerificationRequest:
       required:
       - address
