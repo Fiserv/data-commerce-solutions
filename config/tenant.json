@@ -29,8 +29,8 @@
         "version": "1.0.0",
         "versionType": "major",
         "releaseNotesPath": "docs/release-notes/2023/2023_Q3.md",
-        "apiSpecFileNames": ["account/AccountVerification",
-                             "merchant/merchantVerification"]
+        "apiSpecFileNames": ["AccountVerification",
+                             "MerchantVerification"]
       }
   ],
   "product": {
@@ -62,7 +62,7 @@
       },
       {
         "name": "editParameterAPIExplorer",
-        "value": true
+        "value": false
       }
     ] 
   },

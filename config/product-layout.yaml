@@ -28,17 +28,18 @@
 # the delivery of this work
 ################################################################################
 header:
-  productName: REPLACEME
-  productionDescription: REPLACEME
-  whoIsItFor: REPLACEME
+  productName: Data Commerce Solutions
+
+  productionDescription: productionDescription
+  whoIsItFor: REPLACEMEwhoIsItFor
   image: 
     link: "/assets/images/Fiserv_Logo.jpg"
-    altText: REPLACEME™
+    altText: Fiserv logo™
 getStarted: /docs/getting-started.md
 featuredFeatures:
-  - title: REPLACE ME
-    description:  REPLACE ME
-    tags: ["REPLACEME", "REPLACEME", "REPLACEME"]
+  - title: REPLACE ME title
+    description:  REPLACE ME description
+    tags: ["REPLACEME1", "REPLACEME2", "REPLACEME3"]
     bullets: ["REPLACEME", "REPLACEME" ]  
     relatedDocs:
       - relatedDoc: 
