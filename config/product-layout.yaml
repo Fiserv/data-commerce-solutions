@@ -30,8 +30,8 @@
 header:
   productName: Data Commerce Solutions
 
-  productionDescription: productionDescription
-  whoIsItFor: REPLACEMEwhoIsItFor
+  productionDescription: Explore and experiment with our Data Commerce Solution APIs. Adhering to financial services industry standards, these normalized APIs enable Developers to explore our solutions and allow for their integration into their own designs
+  whoIsItFor: Developers seeking to create apps and integrate them to Fiserv Data Commerce Solutions.
   image: 
     link: "/assets/images/Fiserv_Logo.jpg"
     altText: Fiserv logo™
@@ -56,13 +56,13 @@ featuredFeatures:
         link: ./docs/REPLACE-ME3.md
     relatedAPIs:
       - relatedAPI: 
-        title: REPLACEME
-        description: REPLACEME
+        title: Account Verification
+        description: "APIs that make it possible to verify account information"
         type: "patch"        
         path: "/v1/REPLACEME1"
       - relatedAPI: 
-        title: REPLACEME
-        description: REPLACEME
+        title: Merchant Verification
+        description: "APIs that make it possible to verify merchant information"
         type: "post"        
         path: "/v1/REPLACEME2"
       - relatedAPI: 
