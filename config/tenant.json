@@ -8,19 +8,7 @@
   "categories": [
 		{
 			"name": "businessFunction",
-			"value": "Business Function",
-			"subcategories": [
-				{
-					"name": "Account",
-					"value": "Account",
-					"description": "APIs that make it possible to verify account information"
-				},
-				{
-					"name": "Merchant",
-					"value": "Merchant",
-					"description": "APIs that make it possible to verify merchant information"
-				}
-			]
+			"value": "Business Function"
 		}
 	],
 	"getStartedFilePath": "/docs/getting-started.md",
