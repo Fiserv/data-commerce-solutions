@@ -98,7 +98,7 @@ From the Body tab, select the **x-www-form-urlencoded** radio button and enter t
 
 
 <kbd>
-    <img src="https://user-images.githubusercontent.com/85101648/221878635-c859cc8d-98a3-47a3-8e57-2299af44b26e.gif" />
+    <img src="https://github.com/Fiserv/data-commerce-solutions/raw/c2f6a483e42535b897fdb983d3ee26c551214b2d/assets/images/Auth-api.gif" />
 </kbd>
 
 <!-- type: tab -->
