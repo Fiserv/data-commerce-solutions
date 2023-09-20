@@ -1,7 +1,7 @@
 ---
 openapi: 3.0.0
 info:
-  title: merchant Verification API
+  title: Merchant Verification API
   description: Merchant Verification api provides merchants confirmation that they have the authority to transact provided that data elements provided by the merchant are accurate
   version: "1"
 servers:
