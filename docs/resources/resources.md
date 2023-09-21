@@ -10,7 +10,6 @@
 <!-- theme: info -->  
 > [Download Postman Collection](https://github.com/Fiserv/data-commerce-solutions/raw/e5da4409da16476da673a1a69000a59becc3978d/assets/DCS_Postman_Collections/data-commerce-solutions_postman.zip)
 
-
 <!--
 
 [Banking Hub - Finxact - Trial Plan Postman Collection.zip](https://github.com/Fiserv/banking-hub/files/12461848/Banking.Hub.-.Finxact.-.Trial.Plan.Postman.Collection.zip)

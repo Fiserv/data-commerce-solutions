@@ -63,7 +63,7 @@ featuredFeatures:
       - relatedAPI: 
         title: Merchant Verification
         description: "APIs that make it possible to verify merchant information"
-        type: "post"        
+        type: "post"  
         path: "/v1/merchant/verification"
       - relatedAPI: 
         title: REPLACEME
