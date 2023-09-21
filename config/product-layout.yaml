@@ -43,30 +43,25 @@ featuredFeatures:
     bullets: ["REPLACEME", "REPLACEME" ]  
     relatedDocs:
       - relatedDoc: 
-        title: REPLACEME
-        description: REPLACEME
-        link: ./docs/REPLACE-ME1.md
+        title: Getting started
+        description: The basics of how to get started with Data Commerce Solutions
+        link: ./docs/getting-started.md
       - relatedDoc: 
-        title: REPLACEME
-        description: REPLACEME
-        link: ./docs/REPLACE-ME2.md
+        title: release notes
+        description: Our latest set of release notes
+        link: ./docs/release-notes/2023/2023_Q3.md
       - relatedDoc: 
         title: REPLACEME
         description: REPLACEME
         link: ./docs/REPLACE-ME3.md
-    relatedAPIs:
-      - relatedAPI: 
-        title: Account Verification
-        description: "APIs that make it possible to verify account information"
-        type: "post"        
-        path: "/v1/account/verification"
-      - relatedAPI: 
-        title: Merchant Verification
-        description: "APIs that make it possible to verify merchant information"
-        type: "post"  
-        path: "/v1/merchant/verification"
-      - relatedAPI: 
-        title: REPLACEME
-        description: REPLACEME
-        type: "get"        
-        path: "/v1/REPLACEME3"
+  - relatedAPIs:
+    - relatedAPI: 
+      title: Account Verification
+      description: "APIs that make it possible to verify account information"
+      type: "post"        
+      path: "/v1/account/verification"
+    - relatedAPI: 
+      title: Merchant Verification
+      description: "APIs that make it possible to verify merchant information"
+      type: "post"  
+      path: "/v1/merchant/verification"
