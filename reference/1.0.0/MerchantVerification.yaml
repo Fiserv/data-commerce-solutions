@@ -108,8 +108,8 @@ paths:
               schema:
                 $ref: '#/components/schemas/inline_response_403'
       x-group-name: Data Commerce Solutions
-      x-proxy-name: Merchant Verification1
-      x-child-product-name: Merchant Verification2
+      x-proxy-name: Merchant Verification
+      x-child-product-name: Data Commerce Solutions
 components:
   schemas:
     Authorization:
