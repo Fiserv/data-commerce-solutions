@@ -39,8 +39,8 @@ getStarted: docs/getting-started.md
 featuredFeatures:
   - title: Data Commerce Solutions
     description:  a collection of our solutions
-    tags: ["REPLACEME1", "REPLACEME2", "REPLACEME3"]
-    bullets: ["REPLACEME", "REPLACEME" ]  
+    tags: ["REPLACEME1"]
+    bullets: ["REPLACEME"]  
     relatedDocs:
       - relatedDoc: 
         title: Getting started
@@ -54,14 +54,14 @@ featuredFeatures:
         title: REPLACEME
         description: REPLACEME
         link: ./docs/REPLACE-ME3.md
-  - relatedAPIs:
-    - relatedAPI: 
-      title: Account Verification
-      description: "APIs that make it possible to verify account information"
-      type: "post"        
-      path: "/v1/account/verification"
-    - relatedAPI: 
-      title: Merchant Verification
-      description: "APIs that make it possible to verify merchant information"
-      type: "post"  
-      path: "/v1/merchant/verification"
+      - relatedAPIs:
+        - relatedAPI: 
+          title: Account Verification
+          description: "APIs that make it possible to verify account information"
+          type: "post"        
+          path: "/v1/account/verification"
+        - relatedAPI: 
+          title: Merchant Verification
+          description: "APIs that make it possible to verify merchant information"
+          type: "post"  
+          path: "/v1/merchant/verification"
