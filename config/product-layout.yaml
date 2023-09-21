@@ -58,13 +58,13 @@ featuredFeatures:
       - relatedAPI: 
         title: Account Verification
         description: "APIs that make it possible to verify account information"
-        type: "patch"        
+        type: "post"        
         path: "/v1/account/verification"
       - relatedAPI: 
         title: Merchant Verification
         description: "APIs that make it possible to verify merchant information"
         type: "post"        
-        path: "  /v1/merchant/verification"
+        path: "/v1/merchant/verification"
       - relatedAPI: 
         title: REPLACEME
         description: REPLACEME
