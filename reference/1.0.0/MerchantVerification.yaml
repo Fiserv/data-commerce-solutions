@@ -107,8 +107,8 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/inline_response_403'
-      x-proxy-name: 
-        x-group-name: Verification Solutions
+      x-proxy-name: Merchant Verification
+      x-group-name: Verification Solutions
       x-child-product-name: Data Commerce Solutions
 components:
   schemas:
