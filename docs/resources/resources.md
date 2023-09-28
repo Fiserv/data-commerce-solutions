@@ -4,7 +4,7 @@
 
 <!-- theme: info -->  
 > [Download API Specifications](https://github.com/Fiserv/data-commerce-solutions/raw/e5da4409da16476da673a1a69000a59becc3978d/assets/APISpecsToDistribute/data-commerce-solutions_spec.zip)
-[Download API Specifications latest](https://github.com/Fiserv/data-commerce-solutions/raw/develop/assets//APISpecsToDistribute/data-commerce-solutions_spec.zip)
+[Download API Specifications latest](https://github.com/Fiserv/data-commerce-solutions/raw/develop/assets/APISpecsToDistribute/data-commerce-solutions_spec.zip)
 
 ## Postman Collection
 
