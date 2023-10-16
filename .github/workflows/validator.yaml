@@ -9,7 +9,6 @@ on:
 jobs:
   validator:
     # to update collections in tenant-data use @main @develop does not update collections
-    # uses: Fiserv/remote-actions/.github/workflows/validator-service.yaml@main
-    uses: Fiserv/remote-actions/.github/workflows/validator-service.yaml@develop
+    uses: Fiserv/remote-actions/.github/workflows/validator-service.yaml@main
     secrets: inherit
  
