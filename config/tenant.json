@@ -16,7 +16,7 @@
       {
         "version": "1.0.0",
         "versionType": "major",
-        "releaseNotesPath": "/docs/release-notes/2023/2023_Q32.md",
+        "releaseNotesPath": "/docs/release-notes/2023/2023_Q3.md",
         "apiSpecFileNames": ["AccountVerification",
                              "MerchantVerification"]
       }
