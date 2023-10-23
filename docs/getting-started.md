@@ -80,6 +80,7 @@ From the Body tab, select the **x-www-form-urlencoded** radio button and enter t
 ![image](https://user-images.githubusercontent.com/81968767/220961197-8e76ec1f-b291-4dfd-8287-c4a83b4ecf40.png)
 
 ### Response
+From the response we are only interested in the following fields Access token ,Expires in and Token type.
 
 |     Field Name      |     Description                                          |     Type      |
 |---------------------|----------------------------------------------------------|---------------|
@@ -134,7 +135,8 @@ Request URL is formed by appending Host URL and API path.
 To get Host URL, go to API key section of your Workspace. The API path along with the method (POST or PUT) is listed under the API Explorer section of that API on Fiserv Developer Studio.
 Refer to the example if host URL of the product is https://cert.api.fiservapps.com/banking/efx/v1/, then request URL will be:
 
-![image](https://user-images.githubusercontent.com/81968767/220958136-563f1974-a241-42e5-886c-e00e5af08ce0.png)
+![image](https://github.com/Fiserv/data-commerce-solutions/raw/develop/assets/images/hostPath.png
+)
 
 
 ### Access Token
