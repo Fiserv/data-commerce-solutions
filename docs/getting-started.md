@@ -148,10 +148,9 @@ Request URL is formed by appending Host URL and API path.
 
 
 To get Host URL, go to API key section of your Workspace. The API path along with the method (POST or PUT) is listed under the API Explorer section of that API on Fiserv Developer Studio.
-Refer to the example if host URL of the product is https://cert.api.fiservapps.com/banking/efx/v1/, then request URL will be:
+Refer to the example if host URL of the product is https://connect-dev.fiservapis.com/v1/account/token/generate/, then request URL will be:
 
-![image](https://github.com/Fiserv/data-commerce-solutions/raw/develop/assets/images/hostPath.png
-)
+![image](https://github.com/Fiserv/data-commerce-solutions/raw/develop/assets/images/hostPath.png)
 
 
 ### Access Token
