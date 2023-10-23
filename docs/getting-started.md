@@ -59,7 +59,7 @@ Use the API mentioned below to generate an access token using Postman.
 
 ### URL
 
-``POST https://az-n-spring-verification-app-az-n-spring-veriapp-staging.private.azuremicroservices.io/v1/auth ``
+``POST https://connect-dev.fiservapis.com/v1/account/token/generate ``
 
 
 ### Headers
@@ -98,7 +98,7 @@ From the Body tab, select the **x-www-form-urlencoded** radio button and enter t
 
 
 <kbd>
-    <img src="https://github.com/Fiserv/data-commerce-solutions/raw/c2f6a483e42535b897fdb983d3ee26c551214b2d/assets/images/Auth-api.gif" />
+    <img src="https://github.com/Fiserv/data-commerce-solutions/raw/develop/assets/images/Auth-api.gif" />
 </kbd>
 
 <!-- type: tab -->
