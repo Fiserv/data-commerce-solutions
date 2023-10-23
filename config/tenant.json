@@ -11,7 +11,7 @@
 			"value": "Business Function"
 		}
 	],
-	"getStartedFilePath": "docs2/getting-started.md",
+	"getStartedFilePath": "docs/getting-started.md",
   "apiVersions": [
       {
         "version": "1.0.0",
