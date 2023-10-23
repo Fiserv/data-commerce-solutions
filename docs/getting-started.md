@@ -80,7 +80,8 @@ From the Body tab, select the **x-www-form-urlencoded** radio button and enter t
 ![image](https://user-images.githubusercontent.com/81968767/220961197-8e76ec1f-b291-4dfd-8287-c4a83b4ecf40.png)
 
 ### Response
-From the response we are only interested in the following fields Access token ,Expires in and Token type.
+From the response we are only interested in the following fields:
+access_token, expires_in and token_type.
 
 |     Field Name      |     Description                                          |     Type      |
 |---------------------|----------------------------------------------------------|---------------|
@@ -91,9 +92,22 @@ From the response we are only interested in the following fields Access token ,E
 **Sample Response**
 ```
 {
-    "access_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjEiLCJwaS5hdG0iOiJhYXVxIn0.eyJzY29wZSI6IiIsImNsaWVudF9pZCI6ImdxNHpvZDB6Wng3NkVPTUtKQUlQUlJUZHJHOENWNGdJIiwiaXNzIjoiaHR0cHM6Ly9mZGMtZmVkc3NvLWNhdC5maXJzdGRhdGEuY29",
-    "expires_in": "899000",
-    "token_type": "Bearer"
+    "refresh_token_expires_in": "0",
+    "api_product_list": "[df-dcs-accountverification-v1ProductX]",
+    "api_product_list_json": [
+        "df-dcs-accountverification-v1ProductX"
+    ],
+    "organization_name": "prj-fisv-n-apigeee4aa22a1",
+    "developer.email": "integration-tester@fiserv.com",
+    "token_type": "BearerToken",
+    "issued_at": "1698050494594",
+    "client_id": "GYrnxCQE5xos5f00qawk3tT8hKGub1JVgNBQBN95YANBwE9G",
+    "access_token": "FdnVuMYAU0hWcZkcEPQPut5yG2EW",
+    "application_name": "e0992cc2-3c3c-487b-bfb8-68d25620d57e",
+    "scope": "",
+    "expires_in": "3599",
+    "refresh_count": "0",
+    "status": "approved"
 }
 ```
 
