@@ -35,7 +35,7 @@ header:
   image: 
     link: "/assets/images/Fiserv_Logo.jpg"
     altText: Fiserv logo™
-getStarted: docs/getting-started.md
+getStarted: /docs/getting-started.md
 featuredFeatures:
   - title: Data Commerce Solutions
     description:  a collection of our solutions
