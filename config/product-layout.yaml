@@ -45,15 +45,15 @@ featuredFeatures:
       - relatedDoc: 
         title: Getting started
         description: The basics of how to get started with Data Commerce Solutions
-        link: ./docs/getting-started.md
+        link: docs/getting-started.md
       - relatedDoc: 
         title: release notes
         description: Our latest set of release notes
-        link: ./docs/release-notes/2023/2023_Q3.md
+        link: docs/release-notes/2023/2023_Q3.md
       - relatedDoc: 
         title: REPLACEME
         description: REPLACEME
-        link: ./docs/REPLACE-ME3.md
+        link: docs/REPLACE-ME3.md
     relatedAPIs:
       - relatedAPI: 
         title: Account Verification
