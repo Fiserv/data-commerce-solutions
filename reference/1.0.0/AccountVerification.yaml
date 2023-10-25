@@ -327,14 +327,14 @@ components:
             User’s last name. May only contain letters, an apostrophe, hyphen,
             period, single space. Length: 1-30
           type: string
-          example: Smith
+          example: Allen
         middleName:
           description: >-
             User’s middle name. May only contain the following characters: 0-9,
             spaces, a-z, A-Z, period, comma, apostrophe, underscore, slash, and
             hyphen. Length: 0-30
           type: string
-          example: Williamson
+          example: J
         nameSuffix:
           description: >-
             Username suffix. Valid Values: Jr, Sr, I, II, III, IV, V, VI, VII,
@@ -352,7 +352,7 @@ components:
             - VII
             - VIII
             - IX
-          example: Sr
+          example: JR
         namePrefix:
           description: 'Username prefix. Valid values: Mr, Ms, Mrs, Miss, Master, Dr'
           type: string
@@ -362,7 +362,7 @@ components:
             - Mrs
             - Miss
             - Master
-          example: Mr
+          example: MR
     address:
       type: array
       items:
@@ -379,7 +379,7 @@ components:
               User’s address street 1. Should not be more than 30 characters.
               Length: 1-30
             type: string
-            example: 1900 NE Miami Pl
+            example: 7003 9TH STREET NORTHWEST
           addressLine2:
             description: >-
               User’s address street 2. Should not be more than 30 characters and
@@ -391,23 +391,23 @@ components:
               User’s city. Cannot be empty. Mandatory if addressLine 1 is
               available. Length: 1-25
             type: string
-            example: Miami
+            example: WASHINGTON
           state:
             description: >-
               User’s state. Valid US state or territory in format “NY” for New
               York. Case Sensitive. Length: 2
             type: string
-            example: FL
+            example: DC
           country:
             description: User’s country.
             type: string
-            example: United States of America
+            example: USA
           zipCode:
             description: >-
               User’s ZIP code. Cannot be empty. Mandatory if addressLine 1 is
               available. Numeric Length: 5
             type: string
-            example: '30139'
+            example: '20012'
           addressCode:
             description: 'Type of address. Valid values: Home, Billing, Service, Work '
             type: string
@@ -484,7 +484,7 @@ components:
             User’s phone number. It can be home, cell, or work phone. This is
             used for primary phone. Should be 10 digits
           type: string
-          example: '1212456789'
+          example: '6481041300'
         phoneType:
           description: >-
             Type of phone number provided. Valid values: Business, Home, Mobile,
@@ -507,7 +507,7 @@ components:
         dateOfBirth:
           description: User’s date of birth in “MM-DD-YYYY” format.
           type: string
-          example: 09-17-1985
+          example: 02-09-1923
     dl:
       type: object
       description: 'Define clients consumers id type '
@@ -520,19 +520,19 @@ components:
             User’s state. Valid US state or territory in format “NY” for New
             York. Case Sensitive. Length: 2
           type: string
-          example: FL
+          example: DC
         idNumber:
           description: 'Actual value of idType chosen. Maximum Length: 25'
           type: string
-          example: S-514-778-616-977
+          example: K225817931981
     ssn:
       description: >-
         User’s Social Security number. Should be numeric. Should not be
         consecutive numbers (111111111, etc.). Should not be sequential number
         (123456789, etc.). Length: 9
       type: string
-      example: '555501234'
+      example: '504457487'
 servers:
   - url: >-
-      https://az-n-spring-verification-app-az-n-spring-veriapp-staging.private.azuremicroservices.io
-    description: Demo Endpoint
+      https://connect-dev.fiservapis.com
+    description: dev Endpoint
