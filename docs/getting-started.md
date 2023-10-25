@@ -155,7 +155,7 @@ Refer to the example if host URL of the product is https://connect-dev.fiservapi
 ### Access Token
 
 An access token is used to authenticate your API build and allows you to use the Fiserv APIs securely. A generated access token is valid for approximately 15 minutes.
-To generate an access token, refer to the [Generating Access Token](?path=docs/getting-started/before-you-start.md#generating-access-token) section.
+To generate an access token, refer to the [Generating Access Token](?path=docs/getting-started.md&branch=develop#generating-access-token) section.
 
 
 
