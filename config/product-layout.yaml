@@ -29,13 +29,12 @@
 ################################################################################
 header:
   productName: Data Commerce Solutions
-
   productionDescription: Explore and experiment with our Data Commerce Solution APIs. Adhering to financial services industry standards, these normalized APIs enable Developers to explore our solutions and allow for their integration into their own designs
   whoIsItFor: Developers seeking to create apps and integrate them to Fiserv Data Commerce Solutions.
   image: 
     link: "/assets/images/Fiserv_Logo.jpg"
     altText: Fiserv logo™
-getStarted: docs/getting-started.md
+getStarted: /docs/getting-started.md
 featuredFeatures:
   - title: Data Commerce Solutions
     description:  a collection of our solutions
