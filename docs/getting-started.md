@@ -9,7 +9,7 @@ titles: Before You Start, Know Our Standard API Structure, Make Your First API C
 >
 >
 >
-1Before you start integration, it is important to register on the Fiserv Developer Studio to test the Account API in the Sandbox environment. You may choose to test APIs using the <a href="?path=docs/getting-started/make-your-first-api-call.md#using-third-party-api-testing-tools" >Third-party API Testing Tools</a> of your choice. However, registration is not required to learn about our APIs and reference documentation.
+Before you start integration, it is important to register on the Fiserv Developer Studio to test the Account API in the Sandbox environment. You may choose to test APIs using the <a href="?path=docs/getting-started/make-your-first-api-call.md#using-third-party-api-testing-tools" >Third-party API Testing Tools</a> of your choice. However, registration is not required to learn about our APIs and reference documentation.
 
 ## Register on Fiserv Developer Studio
 This section describes the process to create an account and workspace on Fiserv Developer Studio to obtain credentials for sandbox testing.
