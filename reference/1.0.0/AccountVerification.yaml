@@ -453,10 +453,9 @@ components:
           example: IE1233456700000
         checkingNumber:
           description: >-
-            Checking account number if account group is Investment. Min length
-            16
+            Checking account number if account group is Investment. 
           type: string
-          example: 1035232110352321
+          example: 2903997982
         creditAccountNumber:
           description: 'Credit card account number. Max length: 255'
           type: string
