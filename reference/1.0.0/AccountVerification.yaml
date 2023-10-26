@@ -455,7 +455,7 @@ components:
           description: >-
             Checking account number if account group is Investment. 
           type: string
-          example: 2903997982
+          example: '2903997982'
         creditAccountNumber:
           description: 'Credit card account number. Max length: 255'
           type: string
