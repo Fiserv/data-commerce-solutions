@@ -352,7 +352,7 @@ components:
             - VII
             - VIII
             - IX
-          example: JR
+          example: Jr
         namePrefix:
           description: 'Username prefix. Valid values: Mr, Ms, Mrs, Miss, Master, Dr'
           type: string
@@ -362,7 +362,7 @@ components:
             - Mrs
             - Miss
             - Master
-          example: MR
+          example: Mr
     address:
       type: array
       items:
