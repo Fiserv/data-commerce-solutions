@@ -470,7 +470,7 @@ components:
         routingNumber:
           description: Routing transit number or ABA Number. Must contain 9 digits
           type: string
-          example: 260095931
+          example: '260095931'
     phone:
       type: object
       description: Define clients consumers phone
