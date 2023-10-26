@@ -284,7 +284,7 @@ components:
     subscriber-id:
       description: uniquely identifies the client information for the request.
       type: string
-      example: 9338497
+      example: '9338497'
     VerificationRequest:
       type: object
       required:
@@ -442,7 +442,7 @@ components:
             - MMAChecking
             - MMASavings
             - Brokerage
-          example: Brokerage
+          example: Checking
         brokerageAccountNumber:
           description: 'Brokerage Account Number. Max length: 255'
           type: string
