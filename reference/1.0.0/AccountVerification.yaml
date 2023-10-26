@@ -385,7 +385,7 @@ components:
               User’s address street 2. Should not be more than 30 characters and
               can be blank. Length: 0-30
             type: string
-            example: Barkingson Way
+            example: 
           city:
             description: >-
               User’s city. Cannot be empty. Mandatory if addressLine 1 is
