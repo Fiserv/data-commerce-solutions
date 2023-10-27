@@ -33,8 +33,8 @@ header:
   <p>Fraud Risk Exchange is a cloud based, single application programing interface (API) based platform allowing Customers to query Fiserv’s rich fraud ecosystem to provide a likelihood of fraud response in real time for Get Ownership (account ownership verification, identity verification) use case as its initial launch. </p>
   <p>Fraud Risk Exchange will provide responses via Get Ownership API in real-time if the Consumer data including, but not limited to, Name, Address, Email, Phone, DOB, Bank Number, Driver’s License, SSN matches with the data in FRE database. In the Phase 1, Seed data will be leveraged for account ownership (confirm the account information matches to the Customer), and identity verification (confirm that Customer information matches with the Identity who they claim to be). Based on the data match, API response back to the Client will be Yes (matches), No (it doesn’t match or partial match) or Null (unsure). The goal is to support Fiserv clients with real-time data match to enhance their risk decisioning, decrease their cost on 3rd party vendors and increase customer satisfaction while fighting fraud.</p>
   <p>The Get Ownership API will provide risk signals based on the search and match logic for fraud/compliance use cases (Non-FCRA).</p>  
-  whoIsItFor: Potential clients include existing Fiserv fraud product teams as well as external FIs, Credit Bureaus, Fintechs, Merchants, and Fraud Solution providers. The depth and scale of the Fraud Risk Exchange will grow over time as Clients are added to it and additional Fiserv data sources are assimilated as source data.       
-  image: 
+  whoIsItFor: <p> Potential clients include existing Fiserv fraud product teams as well as external FIs, Credit Bureaus, Fintechs, Merchants, and Fraud Solution providers. The depth and scale of the Fraud Risk Exchange will grow over time as Clients are added to it and additional Fiserv data sources are assimilated as source data.</p>
+    image: 
     link: "/assets/images/Fiserv_Logo.jpg"
     altText: Fiserv logo™
 getStarted: docs/getting-started.md
