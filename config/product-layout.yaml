@@ -36,118 +36,66 @@ header:
     altText: Fiserv logo™
 getStarted: docs/getting-started.md
 featuredFeatures:
+  - title: Account Verification Api
+    description:   "APIs that make it possible to verify Account information"
+    tags: ["REPLACEME1"]
+    bullets: ["REPLACEME"]  
+    relatedDocs:
+      - relatedDoc: 
+        title: Getting started
+        description: The basics of how to get started with Data Commerce Solutions
+        link: docs/getting-started.md
+      - relatedDoc: 
+        title: release notes
+        description: Our latest set of release notes
+        link: docs/release-notes/2023/2023_Q3.md
+    relatedAPIs:
+      - relatedAPI: 
+        title: Account Verification
+        description: "APIs that make it possible to verify account information"
+        type: "post"        
+        path: "/v1/account/verification"
+  - title: Merchant Verification Api
+    description: "APIs that make it possible to verify merchant information"
+    tags: ["REPLACEME1"]
+    bullets: ["REPLACEME"]  
+    relatedDocs:
+      - relatedDoc: 
+        title: Getting started
+        description: The basics of how to get started with Data Commerce Solutions
+        link: docs/getting-started.md
+      - relatedDoc: 
+        title: release notes
+        description: Our latest set of release notes
+        link: docs/release-notes/2023/2023_Q3.md
+    relatedAPIs:
+      - relatedAPI: 
+        title: Merchant Verification
+        description: "APIs that make it possible to verify merchant information"
+        type: "post"        
+        path: "/v1/merchant/verification"
+benefits:
   - title: Get Ownership API  
-    description:  Fiserv's Data Commerce Solutions Team announces the launch of “Fraud Risk Exchange”, an innovative platform offering real time capabilities built on Fiserv's large scale proprietary data and contributions from its consortium partners which will identify and reduce the risk of fraud. The Fraud Risk Exchange will enable an industry leading data consortium allowing Fiserv clients and its trusted partners to query and share fraud related data.  
-    tags: ["REPLACEME1"]
-    bullets: ["REPLACEME"]  
-    relatedDocs:
-      - relatedDoc: 
-        title: Getting started
-        description: The basics of how to get started with Data Commerce Solutions
-        link: docs/getting-started.md
-      - relatedDoc: 
-        title: release notes
-        description: Our latest set of release notes
-        link: docs/release-notes/2023/2023_Q3.md
-    relatedAPIs:
-      - relatedAPI: 
-        title: Account Verification
-        description: "APIs that make it possible to verify account information"
-        type: "post"        
-        path: "/v1/account/verification"
-      - relatedAPI: 
-        title: Merchant Verification
-        description: "APIs that make it possible to verify merchant information"
-        type: "post"        
-        path: "/v1/merchant/verification"
-      - relatedAPI: 
-        title: REPLACEME
-        description: REPLACEME
-        type: "get"        
-        path: "/v1/REPLACEME3"
+    description: >
+      replace with description of benifit
   - title: Search & Match Logic 
-    description: "Fiserv will deliver the service via API which will utilize search and match logic to query the service layer and provide outcomes in real time - Yes/No/Null responses to End-User inquiries. No data will be exchanged back. Fraud Risk Exchange will filter and only use the compliant datasets as per the contracts for Non-FCRA use cases for fraud/compliance purposes. An example of the Fraud Risk Exchange use case is the following: If Fraud Risk Exchange does not have the unique records that is being queried by the Client, it can extend the call to external data source (call a friend) via Orchestration."    
-    tags: ["REPLACEME1"]
-    bullets: ["REPLACEME"]  
-    relatedDocs:
-      - relatedDoc: 
-        title: Getting started
-        description: The basics of how to get started with Data Commerce Solutions
-        link: docs/getting-started.md
-      - relatedDoc: 
-        title: release notes
-        description: Our latest set of release notes
-        link: docs/release-notes/2023/2023_Q3.md
-    relatedAPIs:
-      - relatedAPI: 
-        title: Account Verification
-        description: "APIs that make it possible to verify account information"
-        type: "post"        
-        path: "/v1/account/verification"
-      - relatedAPI: 
-        title: Merchant Verification
-        description: "APIs that make it possible to verify merchant information"
-        type: "post"        
-        path: "/v1/merchant/verification"
-      - relatedAPI: 
-        title: REPLACEME
-        description: REPLACEME
-        type: "get"        
-        path: "/v1/REPLACEME3"
+    description: >
+      replace with description of benifit
   - title: Seed Data (Banking & eCommerce Merchant Data)  
-    description:  As the first phase, Fraud Risk Exchange will help the businesses with Account Ownership (Confirm the account belongs to the Customer) and Identity Verification (Confirm that Customers are who they claim to be). A Client would then use the Fiserv Fraud Risk Exchange response as an additional data signal in their fraud risk evaluation processes. Clients could use the responses to improve their fraud decisions.   
-    bullets: ["REPLACEME"]  
-    relatedDocs:
-      - relatedDoc: 
-        title: Getting started
-        description: The basics of how to get started with Data Commerce Solutions
-        link: docs/getting-started.md
-      - relatedDoc: 
-        title: release notes
-        description: Our latest set of release notes
-        link: docs/release-notes/2023/2023_Q3.md
-    relatedAPIs:
-      - relatedAPI: 
-        title: Account Verification
-        description: "APIs that make it possible to verify account information"
-        type: "post"        
-        path: "/v1/account/verification"
-      - relatedAPI: 
-        title: Merchant Verification
-        description: "APIs that make it possible to verify merchant information"
-        type: "post"        
-        path: "/v1/merchant/verification"
-      - relatedAPI: 
-        title: REPLACEME
-        description: REPLACEME
-        type: "get"        
-        path: "/v1/REPLACEME3"
+    description: >
+      replace with description of benifit
   - title: Keying and linking 
-    description: Clients using the Fraud Risk Exchange will contribute to it as all Client requests and subsequent confirmation of outcome (fraud or not fraud) will be added to the exchange. The depth and scale of the database will grow over time as Clients are added to it and additional Fiserv data sources are assimilated as source data. 
-    tags: ["REPLACEME1"]
-    bullets: ["REPLACEME"]  
-    relatedDocs:
-      - relatedDoc: 
-        title: Getting started
-        description: The basics of how to get started with Data Commerce Solutions
-        link: docs/getting-started.md
-      - relatedDoc: 
-        title: release notes
-        description: Our latest set of release notes
-        link: docs/release-notes/2023/2023_Q3.md
-    relatedAPIs:
-      - relatedAPI: 
-        title: Account Verification
-        description: "APIs that make it possible to verify account information"
-        type: "post"        
-        path: "/v1/account/verification"
-      - relatedAPI: 
-        title: Merchant Verification
-        description: "APIs that make it possible to verify merchant information"
-        type: "post"        
-        path: "/v1/merchant/verification"
-      - relatedAPI: 
-        title: REPLACEME
-        description: REPLACEME
-        type: "get"        
-        path: "/v1/REPLACEME3"
+    description: >
+      replace with description of benifit 
+  - title: Call a Friend 
+    description: >
+      replace with description of benifit
+  - title: Data Analytics & Reporting 
+    description: >
+      replace with description of benifit
+  - title: Yes/No/Null Response 
+    description: >
+      replace with description of benifit
+  - title: Rules
+    description: >
+      replace with description of benifit
