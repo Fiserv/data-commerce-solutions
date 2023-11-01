@@ -77,16 +77,16 @@ featuredFeatures:
 benefits:
   - title: Get Ownership API  
     description: >
-      replace with description of benifit
+      Fiserv's Data Commerce Solutions Team announces the launch of “Fraud Risk Exchange”, an innovative platform offering real time capabilities built on Fiserv's large scale proprietary data and contributions from its consortium partners which will identify and reduce the risk of fraud. The Fraud Risk Exchange will enable an industry leading data consortium allowing Fiserv clients and its trusted partners to query and share fraud related data.    
   - title: Search & Match Logic 
     description: >
-      replace with description of benifit
+      Fiserv will deliver the service via API which will utilize search and match logic to query the service layer and provide outcomes in real time - Yes/No/Null responses to End-User inquiries. No data will be exchanged back. Fraud Risk Exchange will filter and only use the compliant datasets as per the contracts for Non-FCRA use cases for fraud/compliance purposes. An example of the Fraud Risk Exchange use case is the following: If Fraud Risk Exchange does not have the unique records that is being queried by the Client, it can extend the call to external data source (call a friend) via Orchestration.  
   - title: Seed Data (Banking & eCommerce Merchant Data)  
     description: >
-      replace with description of benifit
+      As the first phase, Fraud Risk Exchange will help the businesses with Account Ownership (Confirm the account belongs to the Customer) and Identity Verification (Confirm that Customers are who they claim to be). A Client would then use the Fiserv Fraud Risk Exchange response as an additional data signal in their fraud risk evaluation processes. Clients could use the responses to improve their fraud decisions.     
   - title: Keying and linking 
     description: >
-      replace with description of benifit 
+       Clients using the Fraud Risk Exchange will contribute to it as all Client requests and subsequent confirmation of outcome (fraud or not fraud) will be added to the exchange. The depth and scale of the database will grow over time as Clients are added to it and additional Fiserv data sources are assimilated as source data. 
   - title: Call a Friend 
     description: >
       replace with description of benifit
