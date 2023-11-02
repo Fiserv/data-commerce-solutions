@@ -37,7 +37,7 @@ header:
 getStarted: docs/getting-started.md
 featuredFeatures:
   - title: Account Verification Api
-    description: "023456789 123456789 223456789 323456789 423456789 523456789 623456789 723456789 823456789 923456789 023456789 123456789 223456789 323456789 423456789 523456789 623456789 723456789 823456789 923456789 023456789 123456789 223456789 323456789 423456789 523456789 623456789 723456789 823456789 923456789 "
+    description:   "APIs that make it possible to verify Account information"
     tags: ["REPLACEME1"]
     bullets: ["REPLACEME"]  
     relatedDocs:
@@ -77,7 +77,7 @@ featuredFeatures:
 benefits:
   - title: Get Ownership API  
     description: >
-      023456789 123456789 223456789 323456789 423456789 523456789 623456789 723456789 823456789 923456789 023456789 123456789 223456789 323456789 423456789 523456789 623456789 723456789 823456789 923456789 023456789 123456789 223456789 323456789 423456789 523456789 623456789 723456789 823456789 923456789 
+      Fiserv's Data Commerce Solutions Team announces the launch of “Fraud Risk Exchange”, an innovative platform offering real time capabilities built on Fiserv's large scale proprietary data and contributions from its consortium partners which will identify and reduce the risk of fraud. The Fraud Risk Exchange will enable an industry leading data consortium allowing Fiserv clients and its trusted partners to query and share fraud related data.    
   - title: Search & Match Logic 
     description: >
       Fiserv will deliver the service via API which will utilize search and match logic to query the service layer and provide outcomes in real time - Yes/No/Null responses to End-User inquiries. No data will be exchanged back. Fraud Risk Exchange will filter and only use the compliant datasets as per the contracts for Non-FCRA use cases for fraud/compliance purposes. An example of the Fraud Risk Exchange use case is the following: If Fraud Risk Exchange does not have the unique records that is being queried by the Client, it can extend the call to external data source (call a friend) via Orchestration.  
