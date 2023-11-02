@@ -77,7 +77,7 @@ featuredFeatures:
 benefits:
   - title: Get Ownership API  
     description: >
-      023456789 123456789 223456789 323456789 423456789 523456789 623456789 723456789 823456789 923456789 023456789 123456789 223456789 323456789 423456789 5234567892
+      023456789 123456789 223456789 323456789 423456789 523456789 623456789 723456789 823456789 923456789 023456789 123456789 223456789 323456789 423456789 523456789
   - title: Search & Match Logic 
     description: >
       Fiserv will deliver the service via API which will utilize search and match logic to query the service layer and provide outcomes in real time - Yes/No/Null responses to End-User inquiries. No data will be exchanged back. Fraud Risk Exchange will filter and only use the compliant datasets as per the contracts for Non-FCRA use cases for fraud/compliance purposes. An example of the Fraud Risk Exchange use case is the following: If Fraud Risk Exchange does not have the unique records that is being queried by the Client, it can extend the call to external data source (call a friend) via Orchestration.  
