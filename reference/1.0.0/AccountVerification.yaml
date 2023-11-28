@@ -267,8 +267,8 @@ paths:
             schema:
               $ref: '#/components/schemas/VerificationRequest'
       x-proxy-name: Account Verification
-      x-group-name: Verification Solutions
-      x-child-product-name: Data Commerce Solutions
+      x-group-name: Account Ownership
+      x-child-product-name: Fraud Risk Exchange
 components:
   schemas:
     Authorization:
