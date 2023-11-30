@@ -12,7 +12,7 @@ paths:
   /v1/merchant/verification:
     post:
       summary: Verify that a merchant has the authority to transact using the provided account and that data elements provided by the merchant are accurate
-      description: verifies account information
+      description: Account Ownership information is checked to match a record in the Fraud Risk Exchange database.
       operationId: merchantVerification
       parameters:
       - name: Authorization

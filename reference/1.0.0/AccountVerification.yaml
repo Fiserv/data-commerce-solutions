@@ -13,7 +13,7 @@ paths:
         Verify that a CONSUMER has the authority to transact using the provided
         account and data elements provided by the CONSUMER are accurate
       operationId: accountVerification
-      description: verifies account information
+      description: Account Ownership information is checked to match a record in the Fraud Risk Exchange database.
       tags:
         - Dev
       responses:
@@ -268,7 +268,7 @@ paths:
               $ref: '#/components/schemas/VerificationRequest'
       x-proxy-name: Account Verification
       x-group-name: Account Ownership
-      x-child-product-name: Fraud Risk Exchange
+      x-child-product-name: Data Commerce Solutions
 components:
   schemas:
     Authorization:
