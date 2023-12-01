@@ -36,8 +36,8 @@ header:
     altText: Fiserv logo™
 getStarted: docs/getting-started.md
 featuredFeatures:
-  - title: Account Verification Api
-    description:   "APIs that make it possible to verify Account information"
+  - title: Account Ownership
+    description:   "Account Ownership information is checked to match a record in the Fraud Risk Exchange database."
     tags: ["REPLACEME1"]
     bullets: ["REPLACEME"]  
     relatedDocs:
@@ -51,8 +51,8 @@ featuredFeatures:
         link: docs/release-notes/2023/2023_Q3.md
     relatedAPIs:
       - relatedAPI: 
-        title: Account Verification
-        description: "APIs that make it possible to verify account information"
+        title: Account Ownership
+        description: "Account Ownership information is checked to match a record in the Fraud Risk Exchange database."
         type: "post"        
         path: "/v1/account/verification"
   - title: Merchant Verification Api

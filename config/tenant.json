@@ -1,5 +1,5 @@
 {
-  "title": "Data Commerce Solutions",
+  "title": "Fraud Risk Exchange",
   "name": "DataCommerceSolutions",
   "brand": "Fiserv",
   "brandLogoURL": "https://raw.githubusercontent.com/Fiserv/Developer-Portal-Tenant-API/develop/assets/images/Fiserv_Logo.jpg",
@@ -17,7 +17,7 @@
         "version": "1.0.0",
         "versionType": "major",
         "releaseNotesPath": "/docs/release-notes/2023/2023_Q3.md",
-        "apiSpecFileNames": ["AccountVerification",
+        "apiSpecFileNames": ["AccountOwnership",
                              "MerchantVerification"]
       }
   ],

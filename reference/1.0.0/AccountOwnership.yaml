@@ -1,9 +1,9 @@
 openapi: 3.0.0
 info:
   version: 1.1.1
-  title: Account Verification API
+  title: Account Ownership API
   description: >-
-    Account Verification api provides prospective clients confirmation that a
+    Account ownership api provides prospective clients confirmation that a
     CONSUMER has the authority to transact using the provided account ID and
     that data elements provided by the CONSUMER are accurate
 paths:
@@ -12,7 +12,7 @@ paths:
       summary: >-
         Verify that a CONSUMER has the authority to transact using the provided
         account and data elements provided by the CONSUMER are accurate
-      operationId: accountVerification
+      operationId: AccountOwnership
       description: Account Ownership information is checked to match a record in the Fraud Risk Exchange database.
       tags:
         - Dev
