@@ -54,7 +54,7 @@ featuredFeatures:
         title: Account Ownership
         description: "Account Ownership information is checked to match a record in the Fraud Risk Exchange database."
         type: "post"        
-        path: "/v1/account/verification"
+        path: "/v1/fre/ownership/account"
   - title: Merchant Verification Api
     description: "APIs that make it possible to verify merchant information"
     tags: ["REPLACEME1"]

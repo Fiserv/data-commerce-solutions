@@ -7,7 +7,7 @@ info:
     CONSUMER has the authority to transact using the provided account ID and
     that data elements provided by the CONSUMER are accurate
 paths:
-  /v1/account/verification:
+  /v1/fre/ownership/account:
     post:
       summary: >-
         Verify that a CONSUMER has the authority to transact using the provided
@@ -534,4 +534,4 @@ components:
 servers:
   - url: >-
       https://connect-dev.fiservapis.com
-    description: dev Endpoint
+    description: Developer Endpoint
