@@ -59,7 +59,7 @@ featuredFeatures:
     description: "APIs that make it possible to verify merchant information"
     tags: ["REPLACEME1"]
     bullets: ["REPLACEME"]  
-    relatedDocs:a
+    relatedDocs:
       - relatedDoc: 
         title: Getting started
         description: The basics of how to get started with Data Commerce Solutions
