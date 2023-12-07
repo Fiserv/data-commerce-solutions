@@ -9,5 +9,3 @@
 
 <!-- theme: info -->  
 > [Download Postman Collection](https://github.com/Fiserv/tenants-data/raw/develop/assets/data-commerce-solutions_postman.zip)
-
-
