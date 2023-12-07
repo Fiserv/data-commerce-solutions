@@ -43,7 +43,7 @@ featuredFeatures:
     relatedDocs:
       - relatedDoc: 
         title: Getting started
-        description: The basics of how to get started with Data Commerce Solutions
+        description: The basics of how to get started with Data Commerce Solutions.
         link: docs/getting-started.md
       - relatedDoc: 
         title: release notes
@@ -61,7 +61,7 @@ benefits:
       Share fraud-related data and effectively fight against fraudulent activity and improve the customer experience.
   - title: Enhance fraud detection capabilities
     description: >
-      Enhance fraud detection capabilities, identify patterns and trends, and provide a more robust and comprehensive solution
+      Enhance fraud detection capabilities, identify patterns and trends, and provide a more robust and comprehensive solution.
   - title: Reduce duplication of efforts and costs 
     description: >
       Reduce duplication of efforts and costs, improve efficiency, and foster collaboration among participants to stay ahead of evolving fraud tactics.
