@@ -266,8 +266,8 @@ paths:
           application/json:
             schema:
               $ref: '#/components/schemas/VerificationRequest'
-      x-proxy-name: Account Verification
-      x-group-name: Account Ownership
+      x-proxy-name: Account Ownership
+      x-group-name: Fraud Risk Exchange
       x-child-product-name: Data Commerce Solutions
 components:
   schemas:
