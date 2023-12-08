@@ -3,12 +3,12 @@
 ## API Specifications
 
 <!-- theme: info -->  
-> [Download API Specifications](https://github.com/Fiserv/tenants-data/raw/develop/assets/data-commerce-solutions_spec.zip)
+> [Download API Specifications](https://github.com/Fiserv/tenants-data/raw/stage/assets/data-commerce-solutions_spec.zip)
 
 ## Postman Collection
 
 <!-- theme: info -->  
-> [Download Postman Collection](https://github.com/Fiserv/tenants-data/raw/develop/assets/data-commerce-solutions_postman.zip)
+> [Download Postman Collection](https://github.com/Fiserv/tenants-data/raw/stage/assets/data-commerce-solutions_postman.zip)
 
 <!--
 [Banking Hub - Finxact - Trial Plan Postman Collection.zip](https://github.com/Fiserv/banking-hub/files/12461848/Banking.Hub.-.Finxact.-.Trial.Plan.Postman.Collection.zip)
